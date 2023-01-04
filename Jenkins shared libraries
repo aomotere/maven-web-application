@@ -1,7 +1,7 @@
 //@Library('LibraryName') _ 
 // Declarative pipeline
 
-@Library('LandmarkSS-sharedlibs') _
+@Library('aomotereSS-sharedlibs') _
 pipeline {
 agent any 
 tools {
@@ -11,7 +11,7 @@ tools {
 stages{
 stage('CheckoutCode'){
   steps{
-    git 'https://github.com/LandmakTechnology/web-app'
+    git 'https://github.com/aomotere/web-app'
 }
 }
 stage("Build"){ 
